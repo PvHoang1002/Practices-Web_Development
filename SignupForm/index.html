@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pham Viet Hoang" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Đăng ký tài khoản người dùng</h1>
+        <p id="alert">Chú ý: Bạn phải nhập đủ các trường có dấu*</p>
+      </header>
+
+      <main>
+        <div class="account-info">
+          <h2>Thông tin tài khoản</h2>
+          <div class="box">
+            <span class="category">
+              <label class="required">Tên đăng nhập</label>
+              <label class="required">Mật khẩu</label>
+              <label class="required">Xác nhận mật khẩu</label>
+            </span>
+
+            <span class="input">
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+            </span>
+          </div>
+        </div>
+
+        <div class="personal-info">
+          <h2>Thông tin cá nhân</h2>
+          <div class="box">
+            <span class="category">
+              <label class="required">Họ tên</label>
+              <label class="required">Ngày sinh</label>
+              <label class="required">Giới tính</label>
+              <label class="required">E-mail</label>
+              <label for="faculty">Khoa</label>
+              <label class="required">SĐT</label>
+            </span>
+
+            <span class="input">
+              <input type="text" />
+              <input type="text" value="dd/mm/yyyy" />
+
+              <div class="gender">
+                <input type="radio" id="male" name="gender" />
+                <label class="radio-label" for="male">Nam</label>
+                <input type="radio" id="female" name="gender" />
+                <label class="radio-label" for="female">Nữ</label>
+              </div>
+
+              <input type="text" value="abc@gmail.com" />
+
+              <select name="faculty" id="faculty">
+                <option value="FIT">Công nghệ thông tin</option>
+                <option value="">Điện tử viễn thông</option>
+                <option value="">Vật lý kỹ thuật & Công nghệ nano</option>
+                <option value="">Cơ học kỹ thuật & Tự động hóa</option>
+                <option value="">Công nghệ nông nghiệp</option>
+                <option value="">Công nghệ Xây dựng - Giao thông</option>
+                <option value="">Other</option>
+              </select>
+
+              <input type="text" />
+
+              <div class="buttons">
+                <button id="submit">Đăng ký</button>
+                <button id="cancel">Hủy bỏ</button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

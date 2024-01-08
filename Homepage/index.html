@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pham Viet Hoang" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Homepage</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo">
+          <a href="#"><img src="source/TBCATSLogo.png" alt="logo" /></a>
+        </li>
+        <li class="button"><i class="fas fa-bars"></i></li>
+        <div class="menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">DESIGN</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </div>
+
+        <li class="search-box">
+          <input type="text" class="input" placeholder="Type to Search" />
+          <button id="search-button">Search</button>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="intro">
+        <h1>
+          Web Design & <br />
+          <b>Development</b> <br />
+          Course
+        </h1>
+        <p>
+          Web Design is a specialisation of the design steam. They also use
+          HTML, <br />
+          CSS, WYSIWYG editing software, mark up validators etc, <br />
+          to create design elements
+        </p>
+        <button id="join">JOIN US</button>
+      </div>
+
+      <div class="login-box">
+        <header>Login Here</header>
+        <input type="text" placeholder="Enter Email Here" />
+        <input type="pass" placeholder="Enter Password Here" />
+        <button id="login">Login</button>
+        <div class="signup">
+          <p>
+            Don't have account? <br />
+            <a href="#">Sign up</a> here
+          </p>
+        </div>
+
+        <div class="other-login-methods">
+          <p>Login with</p>
+          <div class="methods">
+            <ul>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/128/739/739237.png"
+                    alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"
+                    alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/128/739/739257.png"
+                    alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/512/1240/1240979.png"
+                    alt="google"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="https://cdn-icons-png.flaticon.com/128/126/126729.png"
+                    alt="skype"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      $("nav ul li.button i").click(function () {
+        $("nav ul .menu").toggleClass("show");
+        $("nav ul li.button i").toggleClass("show");
+      });
+    </script>
+  </body>
+</html>

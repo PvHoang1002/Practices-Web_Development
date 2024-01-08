@@ -1,0 +1,332 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffd966;
+}
+
+i {
+  color: white;
+  font-size: larger;
+}
+
+nav {
+  background-color: #ffa700;
+  align-items: center;
+  padding: 10px 40px 10px 70px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+nav ul .logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav ul li.button {
+  font-size: 22px;
+  display: none;
+}
+
+nav ul li.button i {
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+nav ul li.button i.show::before {
+  content: "\f00d";
+}
+
+nav ul .menu {
+  padding: 0 25px;
+  display: inline-flex;
+  flex: 1;
+}
+
+nav ul .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: bolder;
+  padding: 0 20px;
+}
+
+nav ul .menu a:hover {
+  color: #19a7ce;
+}
+
+nav ul .search-box {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+
+nav ul .search-box input {
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #000;
+  font: 19px;
+  border-radius: 5px 0 0 5px;
+}
+
+nav ul .search-box button {
+  height: 100%;
+  width: 100px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: tomato;
+  color: white;
+}
+
+nav ul .search-box button:hover {
+  background-color: #fda769;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .intro {
+  margin: 5%;
+  flex-wrap: wrap;
+}
+
+main .intro h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+main .intro h1 b {
+  color: tomato;
+}
+
+main .intro p {
+  font-size: 1.2rem;
+}
+
+main .intro button {
+  font-size: 1.2rem;
+  background-color: #ff7b54;
+  color: black;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+main .intro button:hover {
+  background-color: #f1a661;
+  color: white;
+}
+
+main .login-box {
+  margin: 5%;
+  font-size: 19px;
+  width: 20rem;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 0 10px;
+  background-color: #fbc252;
+}
+
+main .login-box header {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid;
+  font-weight: 800;
+  margin: 10px auto;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #fec868;
+}
+
+main .login-box input {
+  align-items: center;
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 0px;
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  background-color: #fbc252;
+  padding: 5px 10px;
+}
+
+main .login-box input:hover {
+  outline: none;
+}
+
+main .login-box a {
+  text-decoration: none;
+}
+
+main .login-box ul {
+  list-style-type: none;
+}
+
+main .login-box img {
+  width: 7%;
+  height: 7%;
+}
+
+main .login-box li {
+  display: inline;
+}
+
+main .login-box button {
+  display: block;
+  align-items: center;
+  margin: 30px auto 0 auto;
+  width: 8rem;
+  height: 30px;
+  font-size: 19px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: #ff7b54;
+  cursor: pointer;
+}
+
+main .login-box button:hover {
+  background-color: #fda769;
+  color: white;
+}
+
+main .login-box {
+  text-align: center;
+}
+
+main .signup p {
+  display: block;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.methods ul {
+  padding-left: 0;
+  padding-right: auto;
+  align-items: center;
+}
+
+.methods ul li {
+  align-items: center;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 10px 40px 10px 40px;
+  }
+
+  nav ul .logo {
+    display: none;
+  }
+
+  nav ul .menu {
+    flex: 4;
+  }
+
+  nav ul .menu a {
+    font-size: 15px;
+  }
+
+  main .intro {
+    flex: 1;
+  }
+
+  main .login-box {
+    flex: 0.6;
+  }
+
+  main .login-box {
+    height: 390px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav ul li.button {
+    flex: 1;
+    display: block;
+    margin-left: 46px;
+  }
+
+  nav {
+    padding: 9px 40px 9px 0;
+    width: 100%;
+  }
+
+  nav ul .menu {
+    position: fixed;
+    top: -500px;
+    right: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #ffa700;
+    transition: top 0.4s;
+  }
+
+  nav ul .menu a {
+    font-size: 19px;
+  }
+
+  nav ul .menu a:hover {
+    color: #19a7ce;
+  }
+
+  nav ul .menu.show {
+    top: 92px;
+  }
+
+  nav ul .menu li {
+    text-align: center;
+    line-height: 10px;
+    margin: 30px 0;
+  }
+
+  main {
+    /* margin-top: 230px; */
+    flex-direction: column;
+  }
+
+  main .login-box {
+    margin: 30px auto;
+  }
+
+  main .login-box img {
+    width: 8%;
+    height: 8%;
+  }
+}

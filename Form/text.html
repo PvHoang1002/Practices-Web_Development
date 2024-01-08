@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pham Viet Hoang" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form nhập</title>
+  </head>
+  <body>
+    <form method="post">
+      <div class="row">
+        <label for="name" class="category">Họ tên:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="required"
+          onkeypress="javascript:jumpTo(event, 'address');"
+          autocomplete="off"
+        />
+        <span id="name-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="address" class="category">Địa chỉ:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          onkeypress="javascript:jumpTo(event, 'male');"
+          autocomplete="off"
+        />
+        <br />
+      </div>
+
+      <div class="row">
+        <label class="category">Giới tính:</label>
+        <span class="radio-container">
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            autocomplete="off"
+            onkeypress="javascript:jumpTo(event, 'female');"
+          />
+          <label for="male">Nam</label>
+        </span>
+        <span class="radio-container">
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            onkeypress="javascript:jumpTo(event, 'date-of-birth');"
+          />
+          <label for="male">Nữ</label>
+        </span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="date-of-birth" class="category">Ngày sinh:</label>
+        <input
+          type="text"
+          maxlength="10"
+          id="date-of-birth"
+          name="date-of-birth"
+          placeholder="dd/mm/yyyy"
+          class="required"
+          onkeypress="javascript:jumpTo(event, 'email');"
+          autocomplete="off"
+        />
+        <span id="date-of-birth-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="email" class="category">E-mail:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="required"
+          onkeypress="javascript:jumpTo(event, 'phone-number');"
+          autocomplete="off"
+        />
+        <span id="email-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="phone-number" class="category">Điện thoại:</label>
+        <input
+          type="text"
+          maxlength="10"
+          id="phone-number"
+          name="phone-number"
+          onkeypress="javascript:jumpTo(event, 'english');"
+          autocomplete="off"
+        />
+        <span id="phone-number-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="courses" class="category">Khóa đăng ký:</label>
+        <span class="checkbox-container">
+          <input
+            type="checkbox"
+            id="english"
+            value="1"
+            name="course[1][]"
+            onkeypress="javascript:jumpTo(event, 'administration');"
+          />
+          <label for="english">Tiếng Anh</label>
+        </span>
+        <span class="checkbox-container">
+          <input
+            type="checkbox"
+            id="administration"
+            value="1"
+            name="course[1][]"
+            onkeypress="javascript:jumpTo(event, 'it');"
+          />
+          <label for="administration">Quản trị</label>
+        </span>
+        <span class="checkbox-container">
+          <input
+            type="checkbox"
+            id="it"
+            value="1"
+            name="course[1][]"
+            onkeypress="javascript:jumpTo(event, 'username');"
+          />
+          <label for="it">CNTT</label>
+        </span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="username" class="category">Tên sử dụng:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="required"
+          onkeypress="javascript:jumpTo(event, 'password');"
+          autocomplete="off"
+        />
+        <span id="username-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="password" class="category">Mật khẩu:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="required nostyle"
+          onkeypress="javascript:jumpTo(event, 'retype-password');"
+          autocomplete="off"
+        />
+        <span id="password-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="retype-password" class="category">Gõ lại mật khẩu:</label>
+        <input
+          type="password"
+          id="retype-password"
+          name="retype-password"
+          class="required nostyle"
+          onkeypress="javascript:jumpTo(event, 'note');"
+          autocomplete="off"
+        />
+        <span id="retype-password-error" class="error"></span>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="note" class="category">Ghi chú:</label>
+        <textarea
+          name="note"
+          id="note"
+          onkeypress="javascript:jumpTo(event, 'picture-upload');"
+          autocomplete="off"
+        ></textarea>
+        <br />
+      </div>
+
+      <div class="row blank">
+        <label for="blank" class="category">&nbsp;</label>
+        <img class="preview nodisplay" src=""/>
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="picture-upload" class="category">Ảnh chân dung</label>
+        <input
+          type="file"
+          name="picture-upload"
+          id="picture-upload"
+          accept=".png, .jpg"
+        />
+        <br />
+      </div>
+
+      <div class="row">
+        <label for="blank" class="category">&nbsp;</label>
+        <input type="button" id="submit" value="Submit" onclick="javascript:checkAll()"></input>
+        <input type="button" id="cancel" value="Cancel" onclick="javascript:cancelForm()"></input>
+        <br />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

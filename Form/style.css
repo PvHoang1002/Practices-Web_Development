@@ -1,0 +1,93 @@
+body {
+  margin: 8px;
+}
+
+form {
+  margin-top: 0rem;
+}
+
+.row {
+  margin: 1.3rem 0;
+}
+
+.blank {
+  margin: 0;
+}
+
+.category {
+  float: left;
+  width: 7rem;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: 5px;
+  border: 1px solid grey;
+  width: 15rem;
+  background: #f1f1f1;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+  background: #e1e1e1;
+}
+
+input[class="required"] {
+  background-color: aqua;
+}
+input[class="required"]:hover {
+  background-color: #00dddd;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+.radio-container {
+  margin-right: 1rem;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+.checkbox-container {
+  margin-right: 1rem;
+}
+
+.required br {
+  clear: both;
+}
+
+textarea {
+  height: 3rem;
+}
+
+.error {
+  margin-left: 1rem;
+  color: red;
+  font-size: smaller;
+  font-style: italic;
+}
+
+img {
+  width: 15.8rem;
+}
+
+.nodisplay {
+  display: none;
+}
+
+input[type="button"] {
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #0b7dda;
+}

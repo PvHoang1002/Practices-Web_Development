@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  cursor: default;
+}
+
+table tr th:first-child {
+  border-top-left-radius: 7px;
+}
+
+table tr th:last-child {
+  border-top-right-radius: 7px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 7px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 7px;
+}
+
+tr td:nth-child(3) {
+  width: 140px;
+}
+
+th {
+  background-color: #049778;
+}
+
+table tr:nth-child(n + 2) {
+  background-color: #c7f5e6;
+}
+
+table tr:nth-child(n + 2):hover {
+  background-color: #96ddcb;
+  color: #12927b;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  font-weight: 600;
+}
+
+.sortable .sortcol {
+  cursor: pointer;
+}
+
+.sortable .sortcol span.arrow::after {
+  content: "\2195";
+  margin-left: 5px;
+  font-size: 1.3rem;
+}
+
+.sortable .ascending span.arrow::after {
+  content: "\2191";
+  margin-left: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.sortable .descending span.arrow::after {
+  content: "\2193";
+  margin-left: 5px;
+  color: black;
+  font-weight: bold;
+}

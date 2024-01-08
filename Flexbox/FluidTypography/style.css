@@ -1,0 +1,53 @@
+body {
+  display: block;
+  margin: 8px;
+  font-family: arial, sans-serif, serif;
+}
+
+div {
+  display: block;
+}
+
+article {
+  display: block;
+}
+
+h1 {
+  display: block;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main {
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(34, 34, 34);
+}
+
+.main p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+p {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+.main .image-caption {
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.acknowledgment {
+  color: #999;
+  font-size: x-small;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
